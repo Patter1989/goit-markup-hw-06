@@ -555,7 +555,6 @@ img {
 
 .footer-form {
   margin-left: 80px;
-  display: flex;
   }
 
 .footer-form-header {
@@ -567,6 +566,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+}
+
+.footer-form-wrap {
+  display: flex;
 }
 
 .footer-input {
@@ -610,11 +613,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  transition: var(--anim);
-}
-.footer-button:hover,
-.footer-button:focus {
-  background-color: var(--ocean);
 }
 
 .subscribe-icon {
@@ -643,14 +641,14 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim);
   width: 408px;
-  min-height: 576px;
+  height: 576px;
   background-color: #FCFCFC;
   box-shadow:
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   
 }
 
@@ -671,6 +669,9 @@ img {
   border-radius: 50%;
   transition: background-color var(--anim),
   fill var(--anim);
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .modal-close-button:hover,
@@ -681,8 +682,7 @@ img {
 
 .modal-title {
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   color: var(--navy-blue);
   font-weight: 500;
   font-size: 16px;
@@ -692,6 +692,7 @@ img {
 
 .modal-label {
   display: block;
+  margin-bottom: 8px;
 }
 
 .modal-wrap {
@@ -700,11 +701,16 @@ img {
 }
 
 .modal-label span {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--light-slate);
+}
+
+.comment-label {
+  margin-bottom: 16px;
 }
 
 .modal-input {
@@ -714,19 +720,18 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
-  transition: var(--anim);
+  transition: border var(--anim);
   }
 
 .modal-text-input {
   width: 100%;
   height: 120px;
-  margin-bottom: 16px;
   padding: 8px 16px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
-  transition: var(--anim);
+  transition: border var(--anim);
   }
 
 .modal-text-input:focus {
@@ -754,15 +759,13 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-
-
 .modal-icon {
   display: block;
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: var(--anim);
+  transition: fill var(--anim);
 }
 
 .modal-input:focus + .modal-icon {
@@ -780,6 +783,10 @@ img {
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
+}
+
+.privacy-link {
+  color: var(--iris);
 }
 
 .check-icon-wrap {
@@ -815,12 +822,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   border: none;
-  transition: bacground-color var(--anim);
-}
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--ocean);
-  color: white;
 }
 
 /* =============/MODAL WINDOW============ */
