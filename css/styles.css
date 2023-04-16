@@ -404,11 +404,6 @@ img {
   width: 40px;
   height: 40px;
 }
-.social-media-list {
-  margin-top: 16px;
-  display: flex;
-  gap: 16px;
-}
 
 .social-madia-item {
   width: 40px;
@@ -540,12 +535,18 @@ img {
 }
 
 .social-media-header {
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
 }
 
 .footer-link:hover,
